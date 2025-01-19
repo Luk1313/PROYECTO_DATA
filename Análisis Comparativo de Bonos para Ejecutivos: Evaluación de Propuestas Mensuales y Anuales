@@ -1,0 +1,77 @@
+# Resumen y Análisis de Bonos Totales
+
+## 1. Explicación del Gráfico de Bonos Totales Mensuales
+
+El primer gráfico muestra los **Bonos Totales Mensuales** para las dos propuestas, **Propuesta 1** (Bono Total P1) y **Propuesta 2** (Bono Total P2), convertidos a millones de unidades. Este gráfico tiene como objetivo mostrar la distribución de los bonos a lo largo del tiempo, facilitando la comparación entre ambas propuestas para cada mes.
+
+### Descripción del gráfico:
+- **Eje X (Mes/Año)**: Muestra el período de tiempo, desglosado por mes y año.
+- **Eje Y (Bonos Totales en Millones)**: Representa el monto total de los bonos en millones.
+- **Colores**: 
+  - **Azul** para la **Propuesta 1**.
+  - **Naranja** para la **Propuesta 2**.
+
+Este gráfico nos permite observar cómo varían los montos de los bonos para cada propuesta a lo largo de los diferentes meses/años y facilita la comparación visual entre los resultados de ambas propuestas.
+
+## 2. Explicación del Gráfico de Bonos Totales Anuales
+
+El segundo gráfico muestra los **Bonos Totales Anuales** para ambas propuestas. Aquí, se agrupan todos los bonos calculados durante el año para cada propuesta, también convertidos a millones, y se visualizan de manera que se pueda comparar de forma directa el rendimiento de cada propuesta a nivel anual.
+
+### Descripción del gráfico:
+- **Eje X (Tipo de Bono)**: Representa el tipo de bono (Propuesta 1 y Propuesta 2).
+- **Eje Y (Suma Anual en Millones)**: Representa la suma total de los bonos a lo largo del año para cada tipo de bono.
+- **Colores**:
+  - **Azul** para la **Propuesta 1**.
+  - **Naranja** para la **Propuesta 2**.
+
+Este gráfico proporciona una visión general de cómo se acumulan los bonos durante todo el año para cada propuesta, lo que ayuda a visualizar la tendencia anual y hacer una comparación más clara entre ambas propuestas.
+
+## 3. Resumen del Proyecto
+
+Este proyecto se centró en el análisis de los **bonos mensuales y anuales** de dos propuestas distintas, usando datos relacionados con las ventas realizadas por ejecutivos a lo largo de diferentes meses y años.
+
+### Proceso de Cálculo de Bonos
+
+1. **Agrupación de Datos**: Los datos de ventas fueron agrupados por **ejecutivo** y **mes/año** para obtener las sumas de:
+   - **Monto de la factura**.
+   - **Ingreso por operación**.
+   - **Cantidad de clientes operando**.
+2. **Cálculo de Bonos**: Se calculó el **Bono de la Propuesta 1** basado en el monto de la factura y el **Bono de la Propuesta 2** basado en el ingreso por operación, con clasificaciones de valor (Bajo, Medio, Alto) y los porcentajes correspondientes.
+3. **Bono Fijo**: Se calculó un bono fijo dependiendo de la cantidad de clientes operando, clasificados como bajo, medio o alto tráfico.
+4. **Cálculo de Bono Total**: El **Bono Total** se obtuvo sumando los bonos de ambas propuestas y el bono fijo.
+5. **Agrupación Anual**: Finalmente, se agrupó todo por **ejecutivo** y **año**, obteniendo así los bonos totales anuales para cada propuesta.
+
+### Cálculos y Resultados
+
+Los resultados mostraron variaciones en los **bonos mensuales** de cada propuesta, y el análisis de los bonos anuales permitió obtener una visión más clara de cuál propuesta fue más favorable en términos de montos totales pagados a los ejecutivos.
+
+## 4. Comparativa de las Propuestas
+
+### **Propuesta 1 (Bono por Monto de Factura)**
+
+- **Bajo Valor**: 0.25% del monto de la factura.
+- **Medio Valor**: 0.50% del monto de la factura.
+- **Alto Valor**: 0.60% del monto de la factura.
+
+### **Propuesta 2 (Bono por Ingreso por Operación)**
+
+- **Bajo Valor**: 5% del ingreso por operación.
+- **Medio Valor**: 5% del ingreso por operación.
+- **Alto Valor**: 7.5% del ingreso por operación.
+
+#### Observaciones:
+
+- La **Propuesta 2** parece ser más beneficiosa para ejecutivos que logran mayores ingresos por operación, mientras que la **Propuesta 1** favorece a aquellos que manejan montos de factura elevados.
+- El bono fijo adicional en ambos casos, dependiendo de la cantidad de clientes, también juega un papel importante en los montos finales.
+
+### Comparación Final
+
+Para determinar cuál propuesta es la mejor, es necesario considerar tanto los valores mensuales como anuales calculados. En términos generales, si los ejecutivos logran un alto volumen de ventas e ingresos, la **Propuesta 2** podría ofrecer mayores montos de bonos debido a los mayores porcentajes asociados a las categorías altas. Sin embargo, si los ejecutivos están manejando montos de factura elevados, la **Propuesta 1** podría ser más favorable.
+
+## 5. Conclusión Final
+
+En conclusión, el proyecto permitió realizar un análisis exhaustivo de los bonos calculados para los ejecutivos a través de dos propuestas diferentes. El análisis visual de los gráficos mostró cómo cada propuesta impactó en los bonos mensuales y anuales, lo que facilitó la comparación de los resultados. 
+
+**La mejor propuesta dependerá de la estructura de ingresos y operaciones de los ejecutivos.** Si la prioridad es incentivar altos montos de facturación, la **Propuesta 1** podría ser la mejor opción. En cambio, si se busca incentivar el ingreso por operación, la **Propuesta 2** sería más beneficiosa.
+
+Finalmente, el proceso de visualización y agrupación de datos garantizó que los cálculos fueran correctos y transparentes, lo que facilita la toma de decisiones informadas en cuanto a los bonos a pagar a los ejecutivos.
