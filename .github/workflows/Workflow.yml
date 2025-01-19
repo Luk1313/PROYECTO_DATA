@@ -1,0 +1,49 @@
+nombre: Análisis de Bonos
+
+en:
+  push:
+    ramas:
+      - "principal"  # Este flujo se activará cuando haya un push a la rama principal
+  pull_request:
+    ramas:
+      - "principal"  # Este flujo también se ejecutará cuando haya un pull request hacia la rama principal
+
+trabajos:
+  analizar_bonos:
+    ejecutando_en: ubuntu-latest  # Definimos el entorno en el que se ejecutará el flujo
+
+    pasos:
+      # Paso 1: Obtener el código del repositorio
+      - nombre: Obtener el código
+        usa: acciones/checkout@v4
+
+      # Paso 2: Configurar Python y sus dependencias
+      - nombre: Configurar Python
+        usa: acciones/setup-python@v4
+        con:
+          python-version: '3.9'  # Define la versión de Python a usar
+
+      - nombre: Instalar dependencias
+        ejecuta: |
+          pip install -r requirements.txt  # Instala las dependencias necesarias (asegúrate de tener un archivo requirements.txt)
+
+      # Paso 3: Ejecutar el script de análisis de bonos
+      - nombre: Ejecutar análisis de bonos
+        ejecuta: |
+          python análisis_bonos.py  # Ejecuta el script que realiza el análisis de los bonos
+
+      # Paso 4: Crear gráficos de los bonos
+      - nombre: Generar gráficos de los bonos
+        ejecuta: |
+          python generar_graficos.py  # Ejecuta el script que genera los gráficos de los bonos
+
+      # Paso 5: Subir los resultados y gráficos a un directorio de salida (opcional)
+      - nombre: Subir gráficos y resultados
+        usa: acciones/upload-artifact@v2
+        con:
+          nombre: resultados-bonos
+          ruta: |
+            gráficos/*.png  # Aquí se suben los gráficos generados
+            resultados/*.xlsx  # Aquí se suben los archivos de resultados (como los .xlsx)
+S
+          
